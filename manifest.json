@@ -1,0 +1,33 @@
+{
+  "name": "HTML Constructor",
+  "version": "0.1",
+  "description": "Open chosen HTML and CSS snippets from visited GitHub webpages in a popup window, edit them, merge, and run the final code in a new window",
+  "permissions": [
+    "activeTab",
+    "notifications",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_title": "HTML Constructor",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["parse.js" ,"background.js"]
+  },
+  "commands": {
+    "send-snippet": {
+      "suggested_key": { "default": "Alt+Shift+P" },
+      "description": "Send the code snippet to the extension"
+    },
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      }
+    }
+  },
+  "web_accessible_resources": [
+    "icon.png"
+  ],
+  "manifest_version": 2
+}

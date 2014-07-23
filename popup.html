@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML Constructor</title>
+    <style>
+      body {
+        background-color: #CCCCCC;
+        width: 600px;
+        height: 600px;
+        
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        
+        border: 2px solid #666666;
+        
+        -webkit-box-shadow: inset 0 0 3px #000;
+        -ms-box-shadow: inset 0 0 3px #000;
+        box-shadow: inset 0 0 3px #000;
+        
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
+
+      .container {
+        width: 700px;
+        margin: auto;
+      }
+      aside {
+        width: 100px;
+      }
+      .main {
+        width: 500px;
+      }
+      .clear {
+        clear: both;
+      }
+
+      aside, .main, .ready-to-run, #save, .run {
+        float: left;
+      }
+
+      pre, p, .ready-to-run, #save, .run {
+        -webkit-box-shadow: inset 0 0 3px #000;
+        -ms-box-shadow: inset 0 0 3px #000;
+        box-shadow: inset 0 0 3px #000;
+
+        background-color: #BCBCBC;
+      }
+
+      p, .ready-to-run, #save, .run {
+        text-align: center;
+        cursor: pointer;
+      }
+
+      pre, p, .ready-to-run {
+        border-bottom: 2px solid #666666;
+      }
+
+      pre, p {
+        border-top: 2px solid #666666;
+        border-top: 2px solid #666666;
+      }
+
+      pre, .ready-to-run {
+        border-left: 2px solid #666666;
+
+        -webkit-border-bottom-left-radius: 10px;
+        -ms-border-bottom-left-radius: 10px;
+        -moz-border-bottom-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      pre {
+        margin-left: 10px;
+        padding-left: 5px;
+        padding-top: 3px;
+
+        -webkit-border-top-left-radius: 10px;
+        -ms-border-top-left-radius: 10px;
+        -moz-border-top-left-radius: 10px;
+        border--top-left-radius: 10px;
+
+        font-size: 0.7em;
+      }
+
+      p, .ready-to-run {
+        border-right: 2px solid #666666;
+
+        -webkit-border-bottom-right-radius: 10px;
+        -ms-border-bottom-right-radius: 10px;
+        -moz-border-bottom-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      p {
+        height: 20px;
+        width: 100px;
+
+        margin-top: 0px;
+        margin-bottom: -3px;
+        margin-right: 5px;
+        margin-left: 0px;
+
+        -webkit-border-top-right-radius: 10px;
+        -ms-border-top-right-radius: 10px;
+        -moz-border-top-right-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      #save, .run {
+        border: 2px solid #666666;
+      }
+
+      .ready-to-run {
+        height: 20px;
+        width: 100px;
+        
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 0px;
+      }
+
+      #save {
+        height: 25px;
+        width: 100px;
+
+        margin-top: 8px;
+        margin-right: 5px;
+
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
+
+      .run {
+        height: 25px;
+        width: 300px;
+
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+
+      h6 {
+        margin-left: 5px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+      }
+    </style>
+    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="string.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class=container>
+      <div class="ready-to-run" id="h">HTML</div>
+      <div class="ready-to-run" id="c1">CSS</div>
+      <div class="ready-to-run" id="c2">CSS</div>
+      <div class="ready-to-run" id="c3">CSS</div>
+      <div class="ready-to-run" id="c4">CSS</div>
+      <div class=clear></div>
+      <br>
+      <button class="run" id="open">Run</button>
+      <button class="run" id="preview">Preview</button>
+      <div class=clear></div>
+      <br>
+      <aside id="side-column">
+        <button id="save">Save</button>
+        <br>
+        <div id="html-snippets">
+          <h6>HTML Snippets:</h6>
+        </div>
+        <div id="css-snippets">
+          <h6>CSS Snippets:</h6>
+        </div>
+      </aside>
+      <div class=main id="snippets">
+        <pre id="snippet-field" contenteditable="true"></pre>
+      </div>
+      <div class=clear></div>
+    </div>
+
+  </body>
+</html>
